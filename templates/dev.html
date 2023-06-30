@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+About Image Captioning Website
+{% endblock %}
+
+{% block body %}
+<body>
+    <!-- About section -->
+    <section class="container mt-5">
+        <h2 class="mb-4">About Image Captioning Website</h2>
+        <p>
+            The Image Captioning Website is a platform that generates descriptive captions for uploaded images using
+            deep learning techniques. It utilizes a pre-trained model architecture to analyze and understand the content
+            of images, enabling it to generate accurate and meaningful captions.
+        </p>
+        <p>
+            <strong>Features:</strong>
+        </p>
+        <ul>
+            <li>Upload images and get descriptive captions for them</li>
+            <li>Intuitive and user-friendly interface</li>
+            <li>Accurate and contextually relevant captions</li>
+            <li>Supports a wide range of image formats</li>
+        </ul>
+        <p>
+            <strong>Model Architecture:</strong>
+        </p>
+        <p>
+            The image captioning model is built using a deep learning architecture that combines a convolutional neural
+            network (CNN) and a recurrent neural network (RNN). The CNN, specifically the VGG16 model, is used to extract
+            rich and meaningful features from the input image. These features are then fed into the RNN, which generates
+            the textual description or caption for the image.
+        </p>
+        <p>
+            <strong>Technologies Involved:</strong>
+        </p>
+        <ul>
+            <li>Python programming language</li>
+            <li>Flask web framework for server-side development</li>
+            <li>Keras and TensorFlow for deep learning model training and inference</li>
+            <li>Bootstrap for responsive and appealing web design</li>
+            <li>ngrok for secure and public access to the local server</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>Image Captioning Website &copy; 2023. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+{% endblock %}

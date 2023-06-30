@@ -1,0 +1,100 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+
+{% block style %}
+<style>
+  Result Skip Results Iframe
+EDIT ON
+/* GLOBAL STYLES */
+body {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image{
+  color: #121212;
+}
+#top-div{
+  padding: 60px;
+}
+.footer {
+        flex-shrink: 0;
+        background-color: #f8f9fa;
+        padding: 20px;
+    }
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color:black;
+  text-align: center;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+}
+@media screen and (min-width: 1100px) {
+  .typewriter h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .typewriter h1 {
+    font-size: 17px;
+  }
+}
+
+#bt{
+  color: azure;
+}
+
+</style>
+{% endblock %}
+
+
+{% block body %}
+<div id="top-div" style="padding: 50px;">
+  <div >
+    <h1 style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Unlock the Story Within Your Images</h1>
+
+  </div>
+</div>
+<div class="hero-image">
+    <section class="container mt-5">
+    <div>
+        <h1 class="display-4">Welcome to the Image Captioning Website!</h1>
+        <p class="lead">Generate descriptive captions for your images with our advanced captioning model.</p>
+        <hr class="my-4">
+        <p>Simply upload your image and let our model analyze it to provide accurate and meaningful captions.</p>
+        <a href="{{url_for('upload')}}" id="bt">
+      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Go to the Image Caption Generator app">
+        Get Started  </button>
+    </a>
+    </div>
+</section>
+    
+</div>
+
+
+{% endblock %}
