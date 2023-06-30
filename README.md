@@ -11,7 +11,7 @@ Hyperparameter tuning and evaluation metrics to optimize and assess the performa
 Compatibility with popular deep learning frameworks -- TensorFlow .
 Demo notebooks and example code to facilitate understanding and usage.
 Dataset:
-The model can be trained and evaluated using standard image captioning datasets such as MSCOCO or Flickr30k.
+The model can be trained and evaluated using standard image captioning datasets such as Flicker8k, MSCOCO and Flickr30k with proper hardware support.
 
 Dependencies:
 
